@@ -1,0 +1,7 @@
+C:\Users\mark.evans\source\repos\Cubic.NumberSolver\Cubic.NumberSolver\bin\Debug\Cubic.NumberSolver.exe.config
+C:\Users\mark.evans\source\repos\Cubic.NumberSolver\Cubic.NumberSolver\bin\Debug\Cubic.NumberSolver.exe
+C:\Users\mark.evans\source\repos\Cubic.NumberSolver\Cubic.NumberSolver\bin\Debug\Cubic.NumberSolver.pdb
+C:\Users\mark.evans\source\repos\Cubic.NumberSolver\Cubic.NumberSolver\obj\Debug\Cubic.NumberSolver.csprojAssemblyReference.cache
+C:\Users\mark.evans\source\repos\Cubic.NumberSolver\Cubic.NumberSolver\obj\Debug\Cubic.NumberSolver.csproj.CoreCompileInputs.cache
+C:\Users\mark.evans\source\repos\Cubic.NumberSolver\Cubic.NumberSolver\obj\Debug\Cubic.NumberSolver.exe
+C:\Users\mark.evans\source\repos\Cubic.NumberSolver\Cubic.NumberSolver\obj\Debug\Cubic.NumberSolver.pdb
