@@ -24,27 +24,35 @@ namespace Cubic.NumberSolver
 
         public string getOperator()
         {
-            return _expression.Skip(1).FirstOrDefault().ToString();
+            throw new NotImplementedException();
         }
         public IList<NumberExpression> GetAllExpressions(string Expression,IList<string> operatorList)
         {
-            string pattern = "["+string.Join("", operatorList) + "]";
-            var numberExpressions = new List<NumberExpression>();
-            // var regex = new Regex(pattern);
-            var countOFNumbers = Regex.Split(Expression, pattern);
-            int count = 0;
-
-            while (count  < countOFNumbers.Length-1)
+            try
             {
-                var numberExpressionObj = new NumberExpression();
-                numberExpressionObj.FirstNumber = int.Parse(countOFNumbers[count++]);
-                numberExpressionObj.Operator = Expression[Expression.IndexOf(numberExpressionObj.FirstNumber.ToString()) + 1].ToString();
-                numberExpressionObj.SecondNumber = int.Parse(countOFNumbers[count++]);
-                numberExpressions.Add(numberExpressionObj);
-                count = count - 1;
-            }
+                string pattern = "[" + string.Join("", operatorList) + "]";
+                var numberExpressions = new List<NumberExpression>();
+                // var regex = new Regex(pattern);
+                var countOFNumbers = Regex.Split(Expression, pattern);
+                int count = 0;
 
-            return numberExpressions;
+                while (count < countOFNumbers.Length - 1)
+                {
+                    var numberExpressionObj = new NumberExpression();
+                    numberExpressionObj.FirstNumber = int.Parse(countOFNumbers[count++]);
+                    numberExpressionObj.Operator = Expression[Expression.IndexOf(numberExpressionObj.FirstNumber.ToString().LastOrDefault()) + 1].ToString();
+                    numberExpressionObj.SecondNumber = int.Parse(countOFNumbers[count++]);
+                    numberExpressions.Add(numberExpressionObj);
+                    count = count - 1;
+                }
+
+                return numberExpressions;
+
+            }catch(Exception e)
+            {
+
+            }
+            return null;
         }
     }
 }
